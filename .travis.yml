@@ -1,0 +1,13 @@
+language: 
+  - java
+  - node_js
+node_js: 
+  - "4.4.1" 
+jdk:
+  - oraclejdk8
+before_install:
+  - npm install -g npm
+  - npm install -g bower
+  - npm install -g grunt-cli  
+install:
+  - mvn install
